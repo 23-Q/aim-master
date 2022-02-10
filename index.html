@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/option.css">
+  <link rel="stylesheet" href="css/ingame.css">
+  <title>Aim Master</title>
+</head>
+<body>
+  <div class="warp">
+    <div class="screen" id="cross-hair">
+      <div id="cross">
+        <div class="top" id="cross-border"></div>
+        <div class="right" id="cross-border"></div>
+        <div class="left" id="cross-border"></div>
+        <div class="bottom" id="cross-border"></div>
+      </div>
+      <div id="dot"></div>
+    </div>
+<!------------------메인화면------------------>
+    <div class="screen" id="main">
+      <div class="best-score-main">best score : 0</div>
+      <div class="title">
+        <div class="title-img">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        Aim Master
+      </div>
+      <div class="mode-btn-area">
+        <div class="mode-btn-title">Mode</div>
+        <div  class="mode-btn-inner">
+          <button class="btn-standard on">Standard</button>
+          <button class="btn-flick">Flick</button>
+          <button class="btn-tracking">Tracking</button>
+        </div>
+      </div>
+        <button class="btn-start">START</button>
+        <button class="btn-option">Option</button>
+    </div>
+
+<!--------------------옵션화면-------------------->
+    <div class="screen" id="option">
+      <div class="inner-top">
+        <button class="btn-back">back</button>
+        OPTION
+      </div>
+      <div class="option-change-area">
+        <button class="btn-level on">Level</button>
+        <button class="btn-cross-hair">Cross Hair</button>
+      </div>
+
+      <div class="level-area">  <!--난이도-->
+        <div class="level-area-inner">
+          <div class="level-title">Standard</div>
+          <button class="btn-standard-easy">Easy</button>
+          <button class="btn-standard-normal on">Normal</button>
+          <button class="btn-standard-master">Master</button>
+        </div>
+        <div class="level-area-inner">
+          <div class="level-title">Flick</div>
+          <button class="btn-flick-easy">Easy</button>
+          <button class="btn-flick-normal on">Normal</button>
+          <button class="btn-flick-master">Master</button>
+        </div>
+        <div class="level-area-inner">
+          <div class="level-title">Tracking</div>
+          <button class="btn-tracking-easy">Easy</button>
+          <button class="btn-tracking-normal on">Normal</button>
+          <button class="btn-tracking-master">Master</button>
+        </div>
+      </div>
+
+      <div class="cross-hair-area"> <!--크로스헤어-->
+        <button class="btn-cross-select on">cross</button>
+        <button class="btn-dot-select">dot</button>
+        <div class="option-corss">
+          <!--십자선 설정-->
+          <div class="option-inner-left">
+            <div class="option-length">
+              <span>길이</span>
+              <button class="btn-option-minus">-</button>
+              <button class="btn-option-plus">+</button>
+              <input class="input-option" type="number" value="10">
+            </div>
+            <div class="option-between">
+              <span>간격</span>
+              <button class="btn-option-minus">-</button>
+              <button class="btn-option-plus">+</button>
+              <input class="input-option" type="number" value="3">
+            </div>
+            <div class="option-border">
+              <span>테두리</span>
+              <button class="btn-option-minus">-</button>
+              <button class="btn-option-plus">+</button>
+              <input class="input-option" type="number" value="10">
+            </div>
+            <div class="option-opacity">
+              <span class="option-opacity">투명도</span>
+              <button class="btn-option-minus">-</button>
+              <button class="btn-option-plus">+</button>
+              <input class="input-option" type="number" value="10">
+            </div>
+            <div class="option-color">
+              <span>색깔</span>
+              <button class="btn-color1" style="background:#00ff00;"></button>
+              <button class="btn-color2" style="background:#00ffff;"></button>
+              <button class="btn-color3" style="background:#ff00ff;"></button>
+              <button class="btn-color4" style="background:#ff0000;"></button>
+              <button class="btn-color5" style="background:#ffff00;"></button>
+            </div>
+            <div class="option-R">
+              <span style="width:20px;">R</span>
+              <input class="input-option" id="input-R" type="number" value="0">
+            </div>
+            <div class="option-G">
+              <span style="width:20px;">G</span>
+              <input class="input-option" id="input-G" type="number" value="255">
+            </div>
+            <div class="option-B">
+              <span style="width:20px;">B</span>
+              <input class="input-option" id="input-B" type="number" value="0">
+            </div>
+          </div>
+          <div class="option-inner-right">
+            <div class="cross-dot-area"></div>
+            <button class="btn-corss-reset">초기화</button>
+          </div>
+        </div>
+        <!--점 설정-->
+        <div class="option-dot">
+          <div class="option-inner-left">
+            <div class="option-size">
+              <span>크기</span>
+              <button class="btn-option-minus">-</button>
+              <button class="btn-option-plus">+</button>
+              <input class="input-option" type="number" value="6">
+            </div>
+            <div class="option-border">
+              <span>테두리</span>
+              <button class="btn-option-minus">-</button>
+              <button class="btn-option-plus">+</button>
+              <input class="input-option" type="number" value="10">
+            </div>
+            <div class="option-opacity">
+              <span class="option-opacity">투명도</span>
+              <button class="btn-option-minus">-</button>
+              <button class="btn-option-plus">+</button>
+              <input class="input-option" type="number" value="10">
+            </div>
+            <div class="option-color">
+              <span>색깔</span>
+              <button class="btn-color1" style="background:#00ff00;"></button>
+              <button class="btn-color2" style="background:#00ffff;"></button>
+              <button class="btn-color3" style="background:#ff00ff;"></button>
+              <button class="btn-color4" style="background:#ff0000;"></button>
+              <button class="btn-color5" style="background:#ffff00;"></button>
+            </div>
+            <div class="option-R">
+              <span style="width:20px;">R</span>
+              <input class="input-option" id="input-R" type="number" value="0">
+            </div>
+            <div class="option-G">
+              <span style="width:20px;">G</span>
+              <input class="input-option" id="input-G" type="number" value="255">
+            </div>
+            <div class="option-B">
+              <span style="width:20px;">B</span>
+              <input class="input-option" id="input-B" type="number" value="0">
+            </div>
+          </div>
+          <div class="option-inner-right">
+            <div class="cross-dot-area"></div>
+            <button class="btn-dot-reset">초기화</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--------------------인게임-------------------->
+    <div class="screen" id="in-game">
+      <div class="zone"></div>
+      <div class="ingame-top">
+        <div class="esc">뒤로가기 : ESC </div>
+        <div class="score-area">
+          <div class="score">score : 0</div>
+          <div class="best-score">best score : 0</div>
+        </div>
+        <div class="time">00</div>
+      </div>
+      <div class="ready">
+        <h3>if you Ready,</h3>
+        <h1>'click' this screen</h1>
+      </div>
+      <div class="end">
+        <h3>Thank you for play!</h3>
+        <h1 class="your-score">your score : 0</h3>
+      </div>
+      <!-- <div class="plate" id="standard"></div> -->
+    </div>
+
+    </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/op-cross.js"></script>
+  <script src="js/op-dot.js"></script>
+</body>
+</html>

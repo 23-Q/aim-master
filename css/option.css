@@ -1,0 +1,177 @@
+.inner-top{
+  width:100%; height:80px;
+  background:#333;
+  text-align: center;
+  font-size: 35px; line-height: 80px; 
+}
+.btn-back{
+  position: absolute; top:15px; left:10px;
+  width:100px; height:50px;
+  background:none;
+  color:white;
+  font-size: 25px;
+}
+.option-change-area{
+  width: 100%; height:50px;
+  display:flex; justify-content:center;
+  margin-top: 20px;
+}
+.btn-level, .btn-cross-hair{
+  width:200px; height:50px;
+  margin: 0px 10px;
+  font-size: 20px;
+}
+.btn-level.on{background: chartreuse;}
+.btn-cross-hair.on{background: chartreuse;}
+
+.level-area{
+  z-index:3;
+  display:flex; justify-content:center; align-items:center;
+  flex-direction: column;
+  width:600px; height:450px;
+  background:#393939;
+  margin-top:30px;
+  border-radius: 10px;
+}
+.level-area-inner{
+  display:flex; justify-content:center; align-items: center;
+  width:100%; height:100px;
+}
+.level-area-inner button{
+  width:100px; height:40px;
+  font-size: 17px;
+  margin: 0px 5px;
+}
+.level-title{
+  width:120px; height:50px;
+  font-size:22px;
+  line-height:50px;
+}
+.cross-hair-area{
+  display:none;
+  position:relative;
+  width:600px; height:450px;
+  background:rgba(255, 255, 255, 0.05);
+  margin-top:30px;
+  border-radius: 10px;
+}
+.btn-cross-select, .btn-dot-select{
+  position:absolute; top:0px; left:-100px;
+  width:110px; height:120px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color:#888;
+  font-size: 20px;
+}
+.btn-cross-select:hover, .btn-dot-select:hover{
+  color:#999;
+  background: #555;
+}
+.btn-cross-select.on, .btn-dot-select.on{
+  background: #383838;
+  color:white;
+}
+.btn-dot-select{top:130px;}
+
+.option-corss{
+  z-index: 1;
+  display:flex;
+  width:600px; height:450px;
+  background:#383838;
+  border-radius: 0px 10px 10px 10px;
+}
+.option-dot{
+  z-index: 1;
+  display:none;
+  width:600px; height:450px;
+  background:#383838;
+  border-radius: 0px 10px 10px 10px;
+}
+.option-inner-left{
+  width:300px; height:450px;
+  display: flex; align-items: center;
+  padding-top:55px;
+  flex-direction: column;
+}
+.option-inner-left div{
+  display: flex; align-items: center;
+  width:200px; height:42px;
+  font-size: 18px;
+  /* background: rgba(255, 255, 255, 0.05); */
+}
+.option-inner-left div span{ width:60px; }
+
+.option-inner-left div button{
+  width:23px; height:23px;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.input-option{
+  width:40px; height:28px;
+  margin-left:15px;
+}
+.option-inner-right{
+  display: flex; justify-content: center; align-items: center;
+  flex-direction: column;
+  width:300px; height:450px;
+}
+.cross-dot-area{
+  display: flex; justify-content: center; align-items: center;
+  width:200px; height:200px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+#cross{
+  pointer-events: none;
+  z-index: 2;
+  position:absolute; top:370px; left:675px;
+  width:6px; height:6px;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.top{
+  background:rgba(0, 255, 0, 1);
+  position:absolute; top:-10px; left:calc(50% - 1px);
+  width:2px; height:10px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 1);
+}
+.right{
+  background:rgba(0, 255, 0, 1);
+  position:absolute; top:calc(50% - 1px); right:-10px;
+  width:10px; height:2px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 1);
+}
+.bottom{
+  background:rgba(0, 255, 0, 1);
+  position:absolute; bottom:-10px; left:calc(50% - 1px);
+  width:2px; height:10px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 1);
+}
+.left{
+  background:rgba(0, 255, 0, 1);
+  position:absolute; top:calc(50% - 1px); left:-10px;
+  width:10px; height:2px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 1);
+}
+#dot{
+  pointer-events: none;
+  display:none;
+  z-index: 2;
+  position:absolute; top:370px; left:675px;
+  width:6px; height:6px;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background:rgba(0, 255, 0, 1);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 1);
+}
+
+.btn-corss-reset, .btn-dot-reset{
+  width:150px; height:40px;
+  margin-top:30px;
+  font-size: 16px;
+}
+
+
+
