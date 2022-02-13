@@ -1,14 +1,15 @@
-## 리엑트 뮤직 플레이어
+## 미니게임 (Aim Master)
 
-[Demo](http://leesq.dothome.co.kr/musicplayer/index.html)
+[Demo](http://leesq.dothome.co.kr/aimMaster/index.html)
 
-![project-2](https://user-images.githubusercontent.com/99323657/153775133-9c1e73c5-7c27-4842-94f6-ccaba8b96a74.png)
 
-#### 사용 라이브러리
- * React
+#### 바닐라 자바스크립트 제작
+ * JavaScript
+ * CSS3
+ * HTML5
 
 #### 주요기능
-1. 데이터바인딩
-2. range와 버튼으로 동작하는 재생화면
-3. 즐겨찾기
-4. 곡 정보변경 (제목, 아티스트)
+1. 3가지 게임 모드 
+2. 최고점수 기록 
+3. 난이도조절 
+4. 커스터마이징
