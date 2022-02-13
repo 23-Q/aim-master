@@ -1,6 +1,6 @@
 ## 미니게임 (Aim Master)
 
-[Demo](http://leesq.dothome.co.kr/musicplayer/index.html)
+[Demo](http://leesq.dothome.co.kr/aimMaster/index.html)
 
 ![project-3](https://user-images.githubusercontent.com/99323657/153775627-0c3456ee-b953-49cf-830f-190921672ed6.png)
 
