@@ -5,8 +5,10 @@
 ![project-3](https://user-images.githubusercontent.com/99323657/153775627-0c3456ee-b953-49cf-830f-190921672ed6.png)
 
 
-#### 사용 라이브러리
- * React
+#### 바닐라 자바스크립트
+ * JavaScript
+ * CSS3
+ * HTML5
 
 #### 주요기능
 1. 3가지 게임 모드
