@@ -1,4 +1,4 @@
-## 리엑트 뮤직 플레이어
+## 미니게임 (Aim Master)
 
 [Demo](http://leesq.dothome.co.kr/musicplayer/index.html)
 
